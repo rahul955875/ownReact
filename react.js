@@ -4,6 +4,9 @@
           type,
           props : {...props, children}
         }
+        if(children.length) {
+          reactElemnt.props.children = children
+        }
         return reactElemnt
     }
 
