@@ -24,7 +24,7 @@ export function render(reactElement, rootElement) {
       if (Array.isArray(child)) {
         
         DOMElement.append(...child.map((el) => createDomElement(el)));
-      } else if (typeof child.type === "string") {
+      } else if (typeof child?.type === "string") {
         
         DOMElement.append(createDomElement(child));
         //   console.log(createDomElement(child));
